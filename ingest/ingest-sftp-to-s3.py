@@ -24,7 +24,7 @@ ssh_client.connect(hostname=host,port=port,username=username,password=password)
 
 ftp = ssh_client.open_sftp()
 files = ftp.listdir() # parameterize if path is different from root
-now = datetime.now(pytz.timezone("Pacific/Auckland")) # change to region
+now = datetime.now(pytz.timezone("Pacific/Auckland")) # change to region that you want to use for timestamp on your files
 year = now.year
 month = now.month
 day = now.day
